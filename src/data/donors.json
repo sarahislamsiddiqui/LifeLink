@@ -1,5 +1,38 @@
 [
-  { "name": "Neha Sharma", "bloodGroup": "O+", "city": "Kanpur", "phone": "9876543210", "available": true },
-  { "name": "Ali", "bloodGroup": "A-", "city": "Lucknow", "phone": "9812345678", "available": false },
-  { "name": "Priya", "bloodGroup": "B+", "city": "Kanpur", "phone": "9898989898", "available": true }
+  {
+    "name": "Neha Sharma",
+    "age": 28,
+    "gender": "Female",
+    "bloodGroup": "O+",
+    "phone": "9876543210",
+    "email": "neha.sharma@example.com",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "lastDonationDate": "2026-05-10",
+    "available": true
+  },
+  {
+    "name": "Ali",
+    "age": 34,
+    "gender": "Male",
+    "bloodGroup": "A-",
+    "phone": "9812345678",
+    "email": "ali@example.com",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "lastDonationDate": "2026-03-22",
+    "available": false
+  },
+  {
+    "name": "Priya",
+    "age": 25,
+    "gender": "Female",
+    "bloodGroup": "B+",
+    "phone": "9898989898",
+    "email": "priya@example.com",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "lastDonationDate": "2026-06-01",
+    "available": true
+  }
 ]
