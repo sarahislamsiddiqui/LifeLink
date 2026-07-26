@@ -1,14 +1,20 @@
-function DonorCard() {
+function DonorCard({ name, bloodGroup, city, availability }) {
   return (
     <div className="donor-card">
 
-      <h3>Ahmed Khan</h3>
+      <h3>{name}</h3>
 
-      <p><strong>Blood Group:</strong> O+</p>
+      <p>
+        <strong>Blood Group:</strong> {bloodGroup}
+      </p>
 
-      <p><strong>City:</strong> Mumbai</p>
+      <p>
+        <strong>City:</strong> {city}
+      </p>
 
-      <p><strong>Availability:</strong> Available</p>
+      <p>
+        <strong>Availability:</strong> {availability}
+      </p>
 
       <button>Contact Donor</button>
 

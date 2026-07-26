@@ -1,25 +1,36 @@
-function SearchBar() {
+function SearchBar({
+  bloodGroup,
+  setBloodGroup,
+  city,
+  setCity,
+  handleSearch,
+}) {
   return (
     <div className="search-bar">
 
-      <select>
+      <select
+        value={bloodGroup}
+        onChange={(e) => setBloodGroup(e.target.value)}
+      >
         <option value="">Select Blood Group</option>
-        <option>A+</option>
-        <option>A-</option>
-        <option>B+</option>
-        <option>B-</option>
-        <option>AB+</option>
-        <option>AB-</option>
-        <option>O+</option>
-        <option>O-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
       </select>
 
       <input
         type="text"
         placeholder="Enter City"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
       />
 
-      <button>
+      <button onClick={handleSearch}>
         Search
       </button>
 

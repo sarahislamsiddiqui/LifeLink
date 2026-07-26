@@ -47,3 +47,58 @@
 }
 
 }
+.recent-requests {
+  margin-top: 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.recent-requests h2 {
+  color: #c1121f;
+  margin-bottom: 20px;
+}
+
+.request-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.request-item:last-child {
+  border-bottom: none;
+}
+
+.request-item p {
+  margin: 5px 0;
+}
+.progress-section{
+    margin-top:40px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-item{
+    margin:20px 0;
+}
+
+.progress-item p{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.progress-bar{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    background:#c1121f;
+    border-radius:20px;
+}
