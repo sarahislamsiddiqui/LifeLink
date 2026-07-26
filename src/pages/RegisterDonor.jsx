@@ -1,18 +1,58 @@
+import { useState } from "react";
 import "../styles/register.css";
 
 function RegisterDonor() {
+  const [successMessage, setSuccessMessage] = useState(""); 
+   const [age, setAge] = useState("");
+   const [phone, setPhone] = useState("");
+   const [errorMessage, setErrorMessage] = useState("");
+
   return (
     <div className="register-container">
 
       <h1>Register as a Blood Donor</h1>
+      {successMessage && (
+  <p className="success-message">
+    {successMessage}
+  </p>
+)}
+{errorMessage && (
+  <p className="error-message">
+    {errorMessage}
+  </p>
+)}
 
-      <form className="register-form">
+      <form
+  className="register-form"
+ onSubmit={(e) => {
+  e.preventDefault();
+
+  if (age < 18 || age > 65) {
+    setErrorMessage("❌ Age must be between 18 and 65 years.");
+    setSuccessMessage("");
+    return;
+  }
+if (phone.length !== 10) {
+  setErrorMessage("❌ Phone number must contain exactly 10 digits.");
+  setSuccessMessage("");
+  return;
+}
+  setErrorMessage("");
+  setSuccessMessage("✅ Donor registered successfully!");
+}}
+>
 
         <label>Full Name</label>
         <input type="text" placeholder="Enter your full name" required/>
 
         <label>Age</label>
-        <input type="number" placeholder="Enter your age" required />
+      <input
+  type="number"
+  placeholder="Enter your age"
+  value={age}
+  onChange={(e) => setAge(e.target.value)}
+  required
+/>  
 
         <label>Gender</label>
 
@@ -38,7 +78,13 @@ function RegisterDonor() {
         </select>
 
         <label>Phone Number</label>
-        <input type="tel" placeholder="Enter phone number" required/>
+        <input
+  type="tel"
+  placeholder="Enter phone number"
+  value={phone}
+  onChange={(e) => setPhone(e.target.value)}
+  required
+/>
 
         <label>Email</label>
         <input type="email" placeholder="Enter email" required/>

@@ -1,10 +1,17 @@
+import {Link} from "react-router-dom";
 import "../styles/home.css";
+import heroImage from "../assets/images/blood donate.jpg";
 
 function Home() {
   return (
     <div className="home">
 
       <section className="hero">
+        <img
+  src={heroImage}
+  alt="Blood Donation"
+  className="hero-image"
+/>
 
         <h1>Donate Blood, Save Lives</h1>
 
@@ -15,13 +22,16 @@ function Home() {
 
         <div className="hero-buttons">
 
+        <Link to="/register">
           <button className="donor-btn">
-            Become a Donor
+             Become a Donor
           </button>
-
-          <button className="search-btn">
-            Find a Donor
-          </button>
+        </Link>  
+        <Link to="/search">
+            <button className="search-btn">
+               Find a Donor
+            </button>
+        </Link> 
 
         </div>
 
