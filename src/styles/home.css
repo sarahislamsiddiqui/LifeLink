@@ -1,0 +1,85 @@
+.home{
+    width:100%;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#ffe5e5;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#c1121f;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#444;
+    width:60%;
+    margin:auto;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons button{
+    padding:14px 30px;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    margin:10px;
+}
+
+.donor-btn{
+    background:#c1121f;
+    color:white;
+}
+
+.search-btn{
+    background:white;
+    border:2px solid #c1121f !important;
+    color:#c1121f;
+}
+
+.hero-buttons button:hover{
+    transform:scale(1.05);
+    transition:.3s;
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px 20px;
+    flex-wrap:wrap;
+    background:white;
+}
+
+.card{
+    width:250px;
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#c1121f;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:20px;
+    color:#555;
+}
