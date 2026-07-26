@@ -83,3 +83,44 @@
     font-size:20px;
     color:#555;
 }
+.why-donate{
+    background:#ffe5e5;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.why-donate h2{
+    color:#c1121f;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.why-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.why-card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+}
+
+.why-card h3{
+    color:#c1121f;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#555;
+    line-height:1.6;
+}

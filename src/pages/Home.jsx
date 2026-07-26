@@ -45,6 +45,36 @@ function Home() {
   </div>
 
 </section>
+<section className="why-donate">
+
+  <h2>Why Donate Blood?</h2>
+
+  <div className="why-cards">
+
+    <div className="why-card">
+      <h3>❤️ Save Lives</h3>
+      <p>
+        A single blood donation can help save up to three lives.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>⚡ Emergency Support</h3>
+      <p>
+        Blood donations help hospitals during accidents and emergencies.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3>🤝 Build Community</h3>
+      <p>
+        Donating blood creates a stronger and healthier community.
+      </p>
+    </div>
+
+  </div>
+
+</section>
 
 </div>  
   );
