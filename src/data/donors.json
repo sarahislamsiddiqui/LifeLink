@@ -1,0 +1,5 @@
+[
+  { "name": "Neha Sharma", "bloodGroup": "O+", "city": "Kanpur", "phone": "9876543210", "available": true },
+  { "name": "Ali", "bloodGroup": "A-", "city": "Lucknow", "phone": "9812345678", "available": false },
+  { "name": "Priya", "bloodGroup": "B+", "city": "Kanpur", "phone": "9898989898", "available": true }
+]
