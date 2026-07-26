@@ -59,3 +59,17 @@
 .register-form button:hover{
     background:#a30f1a;
 }
+.reset-btn{
+    margin-top:15px;
+    padding:14px;
+    background:#6c757d;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.reset-btn:hover{
+    background:#5a6268;
+}
