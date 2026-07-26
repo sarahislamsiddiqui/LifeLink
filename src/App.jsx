@@ -5,6 +5,7 @@ import RegisterDonor from "./pages/RegisterDonor";
 import SearchDonors from "./pages/SearchDonors";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/search" element={<SearchDonors />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
