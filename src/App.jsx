@@ -4,19 +4,20 @@ import Home from "./pages/Home";
 import RegisterDonor from "./pages/RegisterDonor";
 import SearchDonors from "./pages/SearchDonors";
 import Dashboard from "./pages/Dashboard";
+import EmergencyRequest from "./pages/EmergencyRequest";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<RegisterDonor />} />
         <Route path="/search" element={<SearchDonors />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/emergency" element={<EmergencyRequest />} />
       </Routes>
       <Footer />
     </BrowserRouter>

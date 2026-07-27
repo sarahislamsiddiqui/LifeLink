@@ -22,6 +22,10 @@ function Navbar() {
         <li>
           <Link to="/dashboard">Dashboard</Link>
         </li>
+
+        <li>
+          <Link to="/emergency">Emergency Request</Link>
+        </li>
       </ul>
     </nav>
   );

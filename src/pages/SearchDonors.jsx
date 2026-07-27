@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import DonorCard from "../components/DonorCard";
 import "../styles/search.css";
-import donorsData from "../data/donors.json";
+import { getDonors } from "../services/api";
 
 function SearchDonors() {
-  const [filteredDonors, setFilteredDonors] = useState(donorsData);
+  const [allDonors, setAllDonors] = useState([]);
+  const [filteredDonors, setFilteredDonors] = useState([]);
   const [bloodGroup, setBloodGroup] = useState("");
   const [city, setCity] = useState("");
 
+  useEffect(() => {
+    getDonors().then((res) => {
+      setAllDonors(res.data);
+      setFilteredDonors(res.data);
+    });
+  }, []);
+
   const handleSearch = () => {
-    const result = donorsData.filter((donor) => {
+    const result = allDonors.filter((donor) => {
       const matchBlood =
         bloodGroup === "" || donor.bloodGroup === bloodGroup;
 
