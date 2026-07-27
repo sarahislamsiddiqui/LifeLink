@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Apollo",
+    "address": "MG Road",
+    "city": "Kanpur",
+    "phone": "9876543210",
+    "bloodBankAvailable": true,
+    "latitude": 26.4499,
+    "longitude": 80.3319
+  },
+  {
+    "name": "City Hospital",
+    "address": "Station Road",
+    "city": "Lucknow",
+    "phone": "9812345678",
+    "bloodBankAvailable": true,
+    "latitude": 26.8467,
+    "longitude": 80.9462
+  }
+]
