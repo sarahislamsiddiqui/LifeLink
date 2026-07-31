@@ -3,7 +3,14 @@ const cors = require("cors");
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getFirestore } = require("firebase-admin/firestore");
 
-const serviceAccount = require("./lifelink-c9a04-firebase-adminsdk-fbsvc-4f354e22af.json");
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// ---------------- Firebase ----------------
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 initializeApp({
   credential: cert(serviceAccount),
@@ -11,10 +18,7 @@ initializeApp({
 
 const db = getFirestore();
 
-const app = express();
-
-app.use(cors());
-app.use(express.json());
+// ---------------- Test Routes ----------------
 
 // Test route
 app.get("/", (req, res) => {
@@ -164,7 +168,8 @@ app.delete("/api/requests/:id", async (req, res) => {
   }
 });
 
-// Render provides the port through an environment variable
+// ---------------- Server ----------------
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
