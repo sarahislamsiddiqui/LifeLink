@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://lifelink-28g5.onrender.com/api";
 
 // Donors
 export const getDonors = () => axios.get(`${API_URL}/donors`);
