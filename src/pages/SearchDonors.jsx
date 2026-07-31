@@ -11,11 +11,12 @@ function SearchDonors() {
   const [city, setCity] = useState("");
 
   useEffect(() => {
-    getDonors().then((res) => {
-      setAllDonors(res.data);
-      setFilteredDonors(res.data);
-    });
-  }, []);
+  getDonors().then((res) => {
+    console.log(res.data);
+    setAllDonors(res.data);
+    setFilteredDonors(res.data);
+  });
+}, []);
 
   const handleSearch = () => {
     const result = allDonors.filter((donor) => {
@@ -35,6 +36,7 @@ function SearchDonors() {
   return (
     <div className="search-page">
       <h1>Search Blood Donors</h1>
+
       <p className="search-text">
         Find blood donors by selecting a blood group and city
       </p>
@@ -49,13 +51,10 @@ function SearchDonors() {
 
       <div className="donor-list">
         {filteredDonors.length > 0 ? (
-          filteredDonors.map((donor, index) => (
+          filteredDonors.map((donor) => (
             <DonorCard
-              key={index}
-              name={donor.name}
-              bloodGroup={donor.bloodGroup}
-              city={donor.city}
-              availability={donor.available ? "Available" : "Not Available"}
+              key={donor.id}
+              donor={donor}
             />
           ))
         ) : (
