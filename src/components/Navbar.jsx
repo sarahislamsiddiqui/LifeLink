@@ -1,32 +1,53 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2 className="logo">🩸 LifeLink</h2>
+
+      <NavLink to="/" className="logo">
+        <img
+          src="/lifelink-logo.png"
+          alt="LifeLink Logo"
+          className="logo-icon"
+        />
+        <span>LifeLink</span>
+      </NavLink>
 
       <ul className="nav-links">
+
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/">
+            Home
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/register">Register Donor</Link>
+          <NavLink to="/register">
+            Register Donor
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/search">Search Donors</Link>
+          <NavLink to="/search">
+            Search Donors
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/dashboard">Dashboard</Link>
+          <NavLink to="/dashboard">
+            Dashboard
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/emergency">Emergency Request</Link>
+          <NavLink to="/emergency">
+            Emergency Request
+          </NavLink>
         </li>
+
       </ul>
+
     </nav>
   );
 }
