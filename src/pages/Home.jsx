@@ -1,92 +1,102 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
-import heroImage from "../assets/images/blood donate.jpg";
+import heroImage from "../assets/images/hero-image.png";
 
 function Home() {
   return (
     <div className="home">
 
+      {/* ================= HERO ================= */}
+
       <section className="hero">
-        <img
-  src={heroImage}
-  alt="Blood Donation"
-  className="hero-image"
-/>
 
-        <h1>Donate Blood, Save Lives</h1>
+        <div className="hero-content">
 
-        <p>
-          Every drop counts. Join LifeLink and become a hero by helping
-          patients in need of blood.
-        </p>
+          <div className="hero-badge">
+            ❤️ Trusted Blood Donation Platform
+          </div>
 
-        <div className="hero-buttons">
+          <h1>
+            Every Donation. Every Connection. Every Life Matters.
+          </h1>
 
-        <Link to="/register">
-          <button className="donor-btn">
-             Become a Donor
-          </button>
-        </Link>  
-        <Link to="/search">
-            <button className="search-btn">
-               Find a Donor
-            </button>
-        </Link> 
+          <p>
+            LifeLink is a modern blood donation platform that connects
+            volunteer donors, patients, and hospitals in one place.
+            Quickly register as a donor, search for compatible blood
+            donors, and make life-saving connections when every minute
+            matters.
+          </p>
+
+          <div className="hero-buttons">
+
+            <Link to="/register">
+              <button className="donor-btn">
+                Become a Donor
+              </button>
+            </Link>
+
+            <Link to="/search">
+              <button className="search-btn">
+                Find a Donor
+              </button>
+            </Link>
+
+          </div>
 
         </div>
 
-    </section>
+        <img
+          src={heroImage}
+          alt="LifeLink Hero"
+          className="hero-image"
+        />
 
-<section className="stats">
+      </section>
 
-  <div className="card">
-    <h2>1500+</h2>
-    <p>Total Donors</p>
-  </div>
+      {/* ================= WHY DONATE ================= */}
 
-  <div className="card">
-    <h2>320</h2>
-    <p>Blood Requests</p>
-  </div>
+      <section className="why-donate">
 
-  <div className="card">
-    <h2>45</h2>
-    <p>Partner Hospitals</p>
-  </div>
+        <h2>Why Donate Through LifeLink?</h2>
 
-</section>
-<section className="why-donate">
+        <div className="why-cards">
 
-  <h2>Why Donate Blood?</h2>
+          <div className="why-card">
+            <h3>❤️ Save Lives</h3>
 
-  <div className="why-cards">
+            <p>
+              One blood donation can save multiple lives and give
+              patients another chance when they need it the most.
+            </p>
 
-    <div className="why-card">
-      <h3>❤️ Save Lives</h3>
-      <p>
-        A single blood donation can help save up to three lives.
-      </p>
+          </div>
+
+          <div className="why-card">
+            <h3>⚡ Faster Emergency Response</h3>
+
+            <p>
+              Quickly connect patients with nearby blood donors during
+              emergencies, surgeries, and critical situations.
+            </p>
+
+          </div>
+
+          <div className="why-card">
+            <h3>🤝 Stronger Community</h3>
+
+            <p>
+              Join a growing network of generous donors working together
+              to make healthcare more accessible for everyone.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
-
-    <div className="why-card">
-      <h3>⚡ Emergency Support</h3>
-      <p>
-        Blood donations help hospitals during accidents and emergencies.
-      </p>
-    </div>
-
-    <div className="why-card">
-      <h3>🤝 Build Community</h3>
-      <p>
-        Donating blood creates a stronger and healthier community.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-</div>  
   );
 }
 
