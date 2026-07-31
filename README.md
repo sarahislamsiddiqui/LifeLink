@@ -1,16 +1,17 @@
-# React + Vite
+# 🩸 LifeLink
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LifeLink is a full-stack Blood Donation Management System designed to connect blood donors with people in need. The platform allows users to register as donors, search for available donors by blood group and city, submit emergency blood requests, and view donor information through a clean and responsive interface.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://lifelink-frontend-77fy.onrender.com
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Register as a blood donor
+- Search donors by blood group and city
+- View detailed donor information
+- Submit emergency blood requests
+- Responsive user interface
+- Firebase Firestore database integration
+- RESTful backend APIs
