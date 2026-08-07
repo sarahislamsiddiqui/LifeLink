@@ -39,35 +39,48 @@ https://github.com/sarahislamsiddiqui/LifeLink
 - Render (Frontend & Backend)
 
 ### Version Control
-- Git & GitHub
+- Git
+- GitHub
+
+## 🏗️ Project Architecture
+
+```
+React (Frontend)
+        │
+        ▼
+Express.js REST API
+        │
+        ▼
+Firebase Firestore
+```
 
 ## 🚀 Installation
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/sarahislamsiddiqui/LifeLink.git
 ```
 
-### Navigate to the project folder
+### 2. Navigate to the project folder
 
 ```bash
 cd LifeLink
 ```
 
-### Install frontend dependencies
+### 3. Install frontend dependencies
 
 ```bash
 npm install
 ```
 
-### Run the frontend
+### 4. Start the frontend
 
 ```bash
 npm run dev
 ```
 
-### Run the backend
+### 5. Start the backend
 
 ```bash
 cd server
@@ -77,18 +90,39 @@ node index.js
 
 ## 📸 Screenshots
 
-Add screenshots here:
+### Home Page (Top)
 
-- Home Page
-- Register Donor
-- Search Donors
-- Donor Details
-- Dashboard
-- Emergency Requests
+![Home Page Top](screenshots/home.png)
+
+### Home Page (Bottom)
+
+![Home Page Bottom](screenshots/home2.png)
+
+### Register Donor
+
+![Register Donor](screenshots/register.png)
+
+### Search Donors
+
+![Search Donors](screenshots/search.png)
+
+### Donor Details
+
+![Donor Details](screenshots/donor-details.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Emergency Requests
+
+![Emergency Requests](screenshots/emergency-request.png)
+
+
 
 ## 🔮 Future Improvements
 
-- User authentication and login
+- User authentication
 - Real-time donor availability updates
 - Location-based donor search
 - Email and SMS notifications
@@ -97,14 +131,22 @@ Add screenshots here:
 
 ## 👥 Contributors
 
-- Sarah Islam – Backend Development, Firebase Integration, APIs, Project Management
-- Muntaha – Frontend UI Development
-- Anam – Data Integration and Testing
+### Sarah Islam
+- Backend Development
+- Firebase Firestore Integration
+- REST API Development
+- Project Management
+
+### Muntaha
+- Frontend UI Development
+
+### Anam
+- Data Integration and Testing
 
 ## 📄 License
 
-This project is created for educational and portfolio purposes.
+This project was created for educational and portfolio purposes.
 
 ---
 
-Built with ❤️ using React, Node.js, Express, Firebase, and Render.
+Built with ❤️ using React, Node.js, Express.js, Firebase Firestore, and Render.
