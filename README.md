@@ -1,16 +1,110 @@
-# React + Vite
+# 🩸 LifeLink
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LifeLink is a full-stack Blood Donation Management System designed to connect blood donors with people in need. The platform allows users to register as donors, search for available donors by blood group and city, submit emergency blood requests, and view donor details through a clean and responsive interface.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://lifelink-frontend-77fy.onrender.com
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/sarahislamsiddiqui/LifeLink
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Register as a blood donor
+- Search donors by blood group and city
+- View detailed donor information
+- Submit emergency blood requests
+- Responsive user interface
+- Firebase Firestore database integration
+- RESTful backend APIs
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- React Router
+- CSS3
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- Firebase Firestore
+
+### Deployment
+- Render (Frontend & Backend)
+
+### Version Control
+- Git & GitHub
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/sarahislamsiddiqui/LifeLink.git
+```
+
+### Navigate to the project folder
+
+```bash
+cd LifeLink
+```
+
+### Install frontend dependencies
+
+```bash
+npm install
+```
+
+### Run the frontend
+
+```bash
+npm run dev
+```
+
+### Run the backend
+
+```bash
+cd server
+npm install
+node index.js
+```
+
+## 📸 Screenshots
+
+Add screenshots here:
+
+- Home Page
+- Register Donor
+- Search Donors
+- Donor Details
+- Dashboard
+- Emergency Requests
+
+## 🔮 Future Improvements
+
+- User authentication and login
+- Real-time donor availability updates
+- Location-based donor search
+- Email and SMS notifications
+- Blood donation history
+- Admin dashboard
+
+## 👥 Contributors
+
+- Sarah Islam – Backend Development, Firebase Integration, APIs, Project Management
+- Muntaha – Frontend UI Development
+- Anam – Data Integration and Testing
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
+
+---
+
+Built with ❤️ using React, Node.js, Express, Firebase, and Render.
