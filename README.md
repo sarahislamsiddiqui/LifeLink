@@ -137,10 +137,10 @@ node index.js
 - REST API Development
 - Project Management
 
-### Muntaha
+### Muntaha Noor
 - Frontend UI Development
 
-### Anam
+### Anam Shaikh
 - Data Integration and Testing
 
 ## 📄 License
